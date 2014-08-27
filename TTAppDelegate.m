@@ -17,6 +17,7 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [MagicalRecord setupCoreDataStack];
+    [MagicalRecord setLoggingLevel:MagicalRecordLoggingLevelError];
     TTViewController *controller = [[TTViewController alloc] initWithNibName:nil bundle:nil];
     self.window.rootViewController = controller;
     [self.window makeKeyAndVisible];

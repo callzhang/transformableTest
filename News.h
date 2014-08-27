@@ -8,11 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+@import CoreLocation;
 
 @interface News : NSManagedObject
 
-@property (nonatomic, retain) id preference;
+@property (nonatomic, retain) NSDictionary *preference;
 @property (nonatomic, retain) NSString * title;
-@property (nonatomic, retain) id location;
+@property (nonatomic, retain) CLLocation *location;
 
 @end
